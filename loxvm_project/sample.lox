@@ -1,0 +1,23 @@
+// Sample Lox script used to test the bytecode VM.
+// It exercises arithmetic, string concatenation, variables,
+// assignments, if/else control flow and while loops.
+
+print 1 + 2 * 3;            // Should print 7
+print "hello" + " world";  // Concatenate strings
+
+var a = 10;
+print a;
+a = a + 5;
+print a;
+
+var i = 0;
+while (i < 3) {
+    print i;
+    i = i + 1;
+}
+
+if (a > 10) {
+    print "a is large";
+} else {
+    print "a is small";
+}
